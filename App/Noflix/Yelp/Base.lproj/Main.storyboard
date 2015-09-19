@@ -15,11 +15,24 @@
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
             <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
         </mutableArray>
         <mutableArray key="Comfortaa-Light.ttf">
             <string>Comfortaa-Light</string>
         </mutableArray>
         <mutableArray key="Lobster-1.4.otf">
+            <string>Lobster1.4</string>
+            <string>Lobster1.4</string>
             <string>Lobster1.4</string>
             <string>Lobster1.4</string>
         </mutableArray>
@@ -64,7 +77,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.64464359530606397" blue="0.33393891876909043" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.14804320272646451" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VBP-Cc-VJ1" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leadingMargin" id="0wf-h9-oTa"/>
                             <constraint firstAttribute="centerX" secondItem="49X-Ps-hgn" secondAttribute="centerX" id="6zu-RD-s7j"/>
@@ -89,6 +102,7 @@
                     </view>
                     <connections>
                         <outlet property="maleBtn" destination="VBP-Cc-VJ1" id="Fm2-1c-X2D"/>
+                        <outlet property="titleLabel" destination="49X-Ps-hgn" id="aCA-L9-aG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,58 +127,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-br-3iN">
-                                <rect key="frame" x="133" y="219" width="85" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="wAa-Xg-xZ4"/>
-                                    <constraint firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="yV0-l7-IAk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
-                                <state key="normal" title="&lt;25 km">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="wAa-Xg-xZ4"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwf-8x-Opq">
-                                <rect key="frame" x="258" y="219" width="85" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Xwf-8x-Opq" secondAttribute="height" multiplier="1:1" id="sdO-ep-I58"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
-                                <state key="normal" title="&lt;35 km">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="sdO-ep-I58"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egR-Jl-mtX">
-                                <rect key="frame" x="383" y="219" width="85" height="85"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="egR-Jl-mtX" secondAttribute="height" multiplier="1:1" id="enA-Ag-PZm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
-                                <state key="normal" title="&lt;50 km">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="enA-Ag-PZm"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEP-hc-EMT">
-                                <rect key="frame" x="146" y="133" width="78" height="78"/>
+                                <rect key="frame" x="138" y="130" width="130" height="130"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="height" id="HpP-uQ-xkn"/>
                                     <constraint firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="height" multiplier="1:1" id="NyY-Pl-g1W"/>
                                     <constraint firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="height" multiplier="1:1" id="Pkb-k8-ZO5"/>
                                 </constraints>
@@ -175,13 +141,18 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="NyY-Pl-g1W"/>
                                         <exclude reference="Pkb-k8-ZO5"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="5" id="ugg-Aa-ZG1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0O-Xa-mqh">
-                                <rect key="frame" x="264" y="133" width="78" height="78"/>
+                                <rect key="frame" x="328" y="130" width="130" height="130"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="c0O-Xa-mqh" secondAttribute="height" id="KLR-W2-GOz"/>
                                     <constraint firstAttribute="width" secondItem="c0O-Xa-mqh" secondAttribute="height" multiplier="1:1" id="Lk2-wU-sCm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
@@ -194,11 +165,24 @@
                                         <exclude reference="Lk2-wU-sCm"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="10" id="6Zt-Ry-lPC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6J-F9-dut">
-                                <rect key="frame" x="382" y="133" width="78" height="78"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1w-A6-nQj">
+                                <rect key="frame" x="280" y="133" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="U6J-F9-dut" secondAttribute="height" multiplier="1:1" id="fZB-zF-cVk"/>
+                                    <constraint firstAttribute="width" constant="40" id="2sc-KQ-sgV"/>
+                                    <constraint firstAttribute="height" constant="130" id="fj6-rW-ugV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yct-3Y-fBd">
+                                <rect key="frame" x="138" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yct-3Y-fBd" secondAttribute="height" multiplier="1:1" id="aBR-dz-YWf"/>
+                                    <constraint firstAttribute="width" secondItem="yct-3Y-fBd" secondAttribute="height" multiplier="1:1" id="gDu-Kp-wcc"/>
+                                    <constraint firstAttribute="width" secondItem="yct-3Y-fBd" secondAttribute="height" id="hhe-H9-NX8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
                                 <state key="normal" title="&lt;15 km">
@@ -207,58 +191,640 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="fZB-zF-cVk"/>
+                                        <exclude reference="gDu-Kp-wcc"/>
+                                        <exclude reference="aBR-dz-YWf"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="15" id="rr8-2f-0az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyZ-Yg-RZh">
+                                <rect key="frame" x="328" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hyZ-Yg-RZh" secondAttribute="height" multiplier="1:1" id="8u4-Mz-UVp"/>
+                                    <constraint firstAttribute="width" secondItem="hyZ-Yg-RZh" secondAttribute="height" id="zev-gs-K9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;25 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8u4-Mz-UVp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="25" id="EIe-Fo-KUu"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IL-cP-Pzw">
+                                <rect key="frame" x="280" y="323" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Fgo-7M-Y6G"/>
+                                    <constraint firstAttribute="height" constant="130" id="I8X-wV-QKF"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-6e-Yus">
+                                <rect key="frame" x="138" y="510" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HPG-6e-Yus" secondAttribute="height" multiplier="1:1" id="4ZS-Fb-XRT"/>
+                                    <constraint firstAttribute="width" secondItem="HPG-6e-Yus" secondAttribute="height" multiplier="1:1" id="76e-Nz-Oga"/>
+                                    <constraint firstAttribute="width" secondItem="HPG-6e-Yus" secondAttribute="height" id="fau-S8-kp3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;35 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4ZS-Fb-XRT"/>
+                                        <exclude reference="76e-Nz-Oga"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="35" id="AQF-e6-UZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJw-zD-AJe">
+                                <rect key="frame" x="328" y="510" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SJw-zD-AJe" secondAttribute="height" multiplier="1:1" id="9Zx-kN-a1B"/>
+                                    <constraint firstAttribute="width" secondItem="SJw-zD-AJe" secondAttribute="height" id="fNl-hY-Jxb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;50 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Zx-kN-a1B"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="DEX-IF-8xa" kind="show" identifier="50" id="eCF-uo-yTb"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLC-1A-smz">
+                                <rect key="frame" x="280" y="513" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Afe-MR-aN2"/>
+                                    <constraint firstAttribute="width" constant="40" id="djS-zr-3wM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSL-F3-B0B">
+                                <rect key="frame" x="16" y="49" width="42" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hrI-C7-Q35" kind="unwind" unwindAction="unwindToVCMain:" id="SDU-OO-VLd"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.64464359530000004" blue="0.33393891879999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.14804320269999999" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SJw-zD-AJe" firstAttribute="bottom" secondItem="mLC-1A-smz" secondAttribute="bottom" constant="-3" id="1rb-UY-deO"/>
+                            <constraint firstItem="l1w-A6-nQj" firstAttribute="top" secondItem="Cle-pY-vDT" secondAttribute="bottom" constant="30" id="2M7-hd-DVr"/>
+                            <constraint firstItem="SJw-zD-AJe" firstAttribute="leading" secondItem="mLC-1A-smz" secondAttribute="trailing" constant="8" id="2e8-XH-aCm"/>
+                            <constraint firstItem="yct-3Y-fBd" firstAttribute="width" secondItem="yct-3Y-fBd" secondAttribute="height" id="3eF-Te-OFp"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="top" secondItem="Cle-pY-vDT" secondAttribute="bottom" constant="30" id="3hd-r8-WEB"/>
-                            <constraint firstItem="egR-Jl-mtX" firstAttribute="width" secondItem="Xwf-8x-Opq" secondAttribute="width" id="48i-jS-dmn"/>
                             <constraint firstAttribute="centerX" secondItem="Cle-pY-vDT" secondAttribute="centerX" id="50T-Ty-8Sk"/>
+                            <constraint firstItem="l1w-A6-nQj" firstAttribute="leading" secondItem="sEP-hc-EMT" secondAttribute="trailing" constant="12" id="62H-YJ-g7w"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="leading" secondItem="sEP-hc-EMT" secondAttribute="trailing" constant="40" id="6dO-nZ-OP1"/>
-                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="bottom" secondItem="BPK-br-3iN" secondAttribute="bottom" id="8Sg-q5-rlH"/>
                             <constraint firstItem="sEP-hc-EMT" firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="height" multiplier="1:1" id="ChC-Xc-gva"/>
-                            <constraint firstItem="egR-Jl-mtX" firstAttribute="bottom" secondItem="Xwf-8x-Opq" secondAttribute="bottom" id="E52-5a-flB"/>
-                            <constraint firstItem="U6J-F9-dut" firstAttribute="leading" secondItem="c0O-Xa-mqh" secondAttribute="trailing" constant="40" id="EB8-RE-MVa"/>
+                            <constraint firstItem="hyZ-Yg-RZh" firstAttribute="leading" secondItem="6IL-cP-Pzw" secondAttribute="trailing" constant="8" id="DPF-Nl-icL"/>
+                            <constraint firstItem="yct-3Y-fBd" firstAttribute="height" secondItem="6IL-cP-Pzw" secondAttribute="height" id="DTY-Yo-JsP"/>
+                            <constraint firstItem="yct-3Y-fBd" firstAttribute="bottom" secondItem="6IL-cP-Pzw" secondAttribute="bottom" constant="-3" id="Gms-Go-yEZ"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="top" secondItem="kny-hj-RY5" secondAttribute="bottom" constant="113" id="HOi-Xm-2zB"/>
-                            <constraint firstItem="U6J-F9-dut" firstAttribute="height" secondItem="c0O-Xa-mqh" secondAttribute="height" id="KNy-eK-mG7"/>
+                            <constraint firstItem="cSL-F3-B0B" firstAttribute="leading" secondItem="7Y3-GA-twx" secondAttribute="leadingMargin" id="Qwh-7V-B6u"/>
+                            <constraint firstItem="sEP-hc-EMT" firstAttribute="bottom" secondItem="l1w-A6-nQj" secondAttribute="bottom" constant="-3" id="S2M-Bb-EGz"/>
+                            <constraint firstItem="c0O-Xa-mqh" firstAttribute="leading" secondItem="l1w-A6-nQj" secondAttribute="trailing" constant="8" id="TUp-SD-SdB"/>
+                            <constraint firstItem="SJw-zD-AJe" firstAttribute="width" secondItem="SJw-zD-AJe" secondAttribute="height" id="UYO-QJ-3BO"/>
+                            <constraint firstItem="mLC-1A-smz" firstAttribute="leading" secondItem="HPG-6e-Yus" secondAttribute="trailing" constant="12" id="XHp-qW-KD5"/>
+                            <constraint firstItem="sEP-hc-EMT" firstAttribute="height" secondItem="l1w-A6-nQj" secondAttribute="height" id="YtZ-yQ-VfL"/>
+                            <constraint firstItem="HPG-6e-Yus" firstAttribute="width" secondItem="HPG-6e-Yus" secondAttribute="height" id="acp-v2-A3H"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="width" id="bZY-6u-Oya"/>
-                            <constraint firstItem="BPK-br-3iN" firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="bct-aS-pWz"/>
-                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="height" secondItem="BPK-br-3iN" secondAttribute="height" id="e6z-2c-WhO"/>
-                            <constraint firstItem="U6J-F9-dut" firstAttribute="bottom" secondItem="c0O-Xa-mqh" secondAttribute="bottom" id="f4B-Zg-Igg"/>
-                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="top" secondItem="c0O-Xa-mqh" secondAttribute="bottom" constant="8" id="g3l-pF-Odf"/>
+                            <constraint firstItem="mLC-1A-smz" firstAttribute="top" secondItem="6IL-cP-Pzw" secondAttribute="bottom" constant="60" id="beU-C4-RPE"/>
+                            <constraint firstItem="hyZ-Yg-RZh" firstAttribute="bottom" secondItem="6IL-cP-Pzw" secondAttribute="bottom" constant="-3" id="c6d-9T-Aku"/>
+                            <constraint firstItem="HPG-6e-Yus" firstAttribute="width" secondItem="HPG-6e-Yus" secondAttribute="height" id="dlM-iD-my7"/>
+                            <constraint firstItem="6IL-cP-Pzw" firstAttribute="top" secondItem="l1w-A6-nQj" secondAttribute="bottom" constant="60" id="e37-WF-qam"/>
+                            <constraint firstItem="c0O-Xa-mqh" firstAttribute="bottom" secondItem="l1w-A6-nQj" secondAttribute="bottom" constant="-3" id="eCD-Os-ghe"/>
+                            <constraint firstItem="HPG-6e-Yus" firstAttribute="bottom" secondItem="mLC-1A-smz" secondAttribute="bottom" constant="-3" id="ekw-Su-wIg"/>
+                            <constraint firstItem="c0O-Xa-mqh" firstAttribute="height" secondItem="l1w-A6-nQj" secondAttribute="height" id="gbY-0c-frf"/>
+                            <constraint firstItem="SJw-zD-AJe" firstAttribute="height" secondItem="mLC-1A-smz" secondAttribute="height" id="gh6-kR-yc5"/>
                             <constraint firstAttribute="centerX" secondItem="c0O-Xa-mqh" secondAttribute="centerX" constant="-3" id="iRo-IP-ecV"/>
-                            <constraint firstAttribute="centerX" secondItem="Xwf-8x-Opq" secondAttribute="centerX" id="jdL-wt-2e0"/>
-                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="width" id="lK4-18-2nP"/>
+                            <constraint firstItem="HPG-6e-Yus" firstAttribute="height" secondItem="mLC-1A-smz" secondAttribute="height" id="l67-Vv-fQj"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="height" secondItem="sEP-hc-EMT" secondAttribute="height" id="lLv-Ko-YuY"/>
-                            <constraint firstItem="egR-Jl-mtX" firstAttribute="leading" secondItem="Xwf-8x-Opq" secondAttribute="trailing" constant="40" id="pNc-pJ-VK8"/>
+                            <constraint firstAttribute="centerX" secondItem="l1w-A6-nQj" secondAttribute="centerX" id="lMj-ih-b2g"/>
+                            <constraint firstItem="hyZ-Yg-RZh" firstAttribute="height" secondItem="6IL-cP-Pzw" secondAttribute="height" id="ls4-79-Ob2"/>
+                            <constraint firstItem="SJw-zD-AJe" firstAttribute="width" secondItem="SJw-zD-AJe" secondAttribute="height" id="mXC-Ff-aIG"/>
+                            <constraint firstItem="cSL-F3-B0B" firstAttribute="centerY" secondItem="Cle-pY-vDT" secondAttribute="centerY" id="muv-Dt-6sB"/>
+                            <constraint firstAttribute="centerX" secondItem="mLC-1A-smz" secondAttribute="centerX" id="nRt-uV-lR3"/>
+                            <constraint firstItem="6IL-cP-Pzw" firstAttribute="leading" secondItem="yct-3Y-fBd" secondAttribute="trailing" constant="12" id="r8r-aZ-P0h"/>
                             <constraint firstItem="sEP-hc-EMT" firstAttribute="width" secondItem="sEP-hc-EMT" secondAttribute="height" multiplier="1:1" id="rBg-NZ-0Wy"/>
-                            <constraint firstItem="egR-Jl-mtX" firstAttribute="height" secondItem="Xwf-8x-Opq" secondAttribute="height" id="ri9-6a-sz3"/>
                             <constraint firstItem="c0O-Xa-mqh" firstAttribute="bottom" secondItem="sEP-hc-EMT" secondAttribute="bottom" id="snl-9w-CvS"/>
                             <constraint firstItem="Cle-pY-vDT" firstAttribute="top" secondItem="kny-hj-RY5" secondAttribute="bottom" constant="8" id="uAV-Xv-sJ4"/>
-                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="leading" secondItem="BPK-br-3iN" secondAttribute="trailing" constant="40" id="wfs-TR-OYn"/>
-                            <constraint firstItem="U6J-F9-dut" firstAttribute="width" secondItem="c0O-Xa-mqh" secondAttribute="width" id="xGM-3c-1o7"/>
+                            <constraint firstItem="hyZ-Yg-RZh" firstAttribute="width" secondItem="hyZ-Yg-RZh" secondAttribute="height" id="v7W-PV-kfs"/>
+                            <constraint firstAttribute="centerX" secondItem="6IL-cP-Pzw" secondAttribute="centerX" id="w7Y-5k-cDz"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ChC-Xc-gva"/>
+                                <exclude reference="rBg-NZ-0Wy"/>
+                                <exclude reference="3hd-r8-WEB"/>
+                                <exclude reference="6dO-nZ-OP1"/>
                                 <exclude reference="HOi-Xm-2zB"/>
+                                <exclude reference="bZY-6u-Oya"/>
+                                <exclude reference="iRo-IP-ecV"/>
+                                <exclude reference="lLv-Ko-YuY"/>
+                                <exclude reference="snl-9w-CvS"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="fifteenkm" destination="U6J-F9-dut" id="DKc-hh-Trr"/>
-                        <outlet property="fiftykm" destination="egR-Jl-mtX" id="TbG-HQ-9xy"/>
+                        <outlet property="fifteenkm" destination="yct-3Y-fBd" id="DOa-Fl-MNX"/>
+                        <outlet property="fiftykm" destination="SJw-zD-AJe" id="ytL-Qf-8IN"/>
                         <outlet property="fivekm" destination="sEP-hc-EMT" id="5W9-N8-Bjw"/>
                         <outlet property="tenkm" destination="c0O-Xa-mqh" id="1BA-HM-sHK"/>
-                        <outlet property="thirtyfivekm" destination="Xwf-8x-Opq" id="HTU-9q-INP"/>
-                        <outlet property="twentyfivekm" destination="BPK-br-3iN" id="0WR-Rt-rMu"/>
+                        <outlet property="thirtyfivekm" destination="HPG-6e-Yus" id="1S3-A9-xSz"/>
+                        <outlet property="twentyfivekm" destination="hyZ-Yg-RZh" id="iO7-EF-RAR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r38-18-WbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hrI-C7-Q35" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2482" y="358"/>
         </scene>
+        <!--PriceViewController-->
+        <scene sceneID="j6R-Te-Ize">
+            <objects>
+                <viewController title="PriceViewController" id="DEX-IF-8xa" customClass="PriceViewController" customModule="Noflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wbn-Ks-uqt"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Gr-x8-qBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b5M-Me-oOD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keb-9d-OXc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjx-1L-JBi">
+                                <rect key="frame" x="138" y="130" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="height" multiplier="1:1" id="DcV-1Q-uMJ"/>
+                                    <constraint firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="height" multiplier="1:1" id="hK9-vq-joo"/>
+                                    <constraint firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="height" id="l3S-4T-PUO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$20">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DcV-1Q-uMJ"/>
+                                        <exclude reference="hK9-vq-joo"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="0f9-sk-IRh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-VF-Vht">
+                                <rect key="frame" x="328" y="130" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a1W-VF-Vht" secondAttribute="height" id="Lig-Jx-Xqo"/>
+                                    <constraint firstAttribute="width" secondItem="a1W-VF-Vht" secondAttribute="height" multiplier="1:1" id="NVy-dY-nEF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$35">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NVy-dY-nEF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="Ec7-SR-QFZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZN-zd-pmK">
+                                <rect key="frame" x="280" y="133" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="XPV-9D-ROg"/>
+                                    <constraint firstAttribute="width" constant="40" id="fvw-Aw-8oV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNh-IL-ti5">
+                                <rect key="frame" x="138" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sNh-IL-ti5" secondAttribute="height" multiplier="1:1" id="8rW-sy-C6u"/>
+                                    <constraint firstAttribute="width" secondItem="sNh-IL-ti5" secondAttribute="height" id="TFB-RJ-jfy"/>
+                                    <constraint firstAttribute="width" secondItem="sNh-IL-ti5" secondAttribute="height" multiplier="1:1" id="hnG-Rh-iaQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$50">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8rW-sy-C6u"/>
+                                        <exclude reference="hnG-Rh-iaQ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="m7Y-GS-Nrn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmo-rJ-l1x">
+                                <rect key="frame" x="328" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fmo-rJ-l1x" secondAttribute="height" multiplier="1:1" id="MXh-Sx-0ba"/>
+                                    <constraint firstAttribute="width" secondItem="Fmo-rJ-l1x" secondAttribute="height" id="Wbe-KA-a1X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$75">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MXh-Sx-0ba"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="i7U-lE-xdw"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aB3-IY-3sc">
+                                <rect key="frame" x="280" y="323" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="To8-3N-eyN"/>
+                                    <constraint firstAttribute="width" constant="40" id="ySs-9B-LEp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCs-az-g8b">
+                                <rect key="frame" x="138" y="510" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vCs-az-g8b" secondAttribute="height" multiplier="1:1" id="ILX-Dp-qxr"/>
+                                    <constraint firstAttribute="width" secondItem="vCs-az-g8b" secondAttribute="height" id="fVa-Uk-nzs"/>
+                                    <constraint firstAttribute="width" secondItem="vCs-az-g8b" secondAttribute="height" multiplier="1:1" id="nwu-yC-6cF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$100">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ILX-Dp-qxr"/>
+                                        <exclude reference="nwu-yC-6cF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="qif-Rl-JJy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umS-qS-1jV">
+                                <rect key="frame" x="328" y="510" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="umS-qS-1jV" secondAttribute="height" multiplier="1:1" id="1Q9-tW-AZD"/>
+                                    <constraint firstAttribute="width" secondItem="umS-qS-1jV" secondAttribute="height" id="EcJ-vS-uqh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;$150">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Q9-tW-AZD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="bx3-uE-0hE" kind="show" id="Ned-da-KoQ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhS-xQ-8lO">
+                                <rect key="frame" x="280" y="513" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="RUj-F7-FY6"/>
+                                    <constraint firstAttribute="height" constant="130" id="UEh-D0-RS9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOU-41-k0j">
+                                <rect key="frame" x="16" y="49" width="42" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rk3-b1-G8a" kind="unwind" unwindAction="unwindToVCLocation:" id="7Da-Me-o8j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.14804320269999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fmo-rJ-l1x" firstAttribute="width" secondItem="Fmo-rJ-l1x" secondAttribute="height" id="4QG-Ll-nCV"/>
+                            <constraint firstAttribute="centerX" secondItem="a1W-VF-Vht" secondAttribute="centerX" constant="-3" id="A11-74-0ga"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="leading" secondItem="cjx-1L-JBi" secondAttribute="trailing" constant="40" id="CJN-Vz-rEt"/>
+                            <constraint firstItem="dZN-zd-pmK" firstAttribute="leading" secondItem="cjx-1L-JBi" secondAttribute="trailing" constant="12" id="Cy1-Zk-0Bs"/>
+                            <constraint firstItem="Fmo-rJ-l1x" firstAttribute="leading" secondItem="aB3-IY-3sc" secondAttribute="trailing" constant="8" id="EJd-qC-c2d"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="bottom" secondItem="cjx-1L-JBi" secondAttribute="bottom" id="FZR-NE-JPR"/>
+                            <constraint firstItem="TOU-41-k0j" firstAttribute="centerY" secondItem="Keb-9d-OXc" secondAttribute="centerY" constant="0.5" id="G28-tQ-MWO"/>
+                            <constraint firstItem="aB3-IY-3sc" firstAttribute="leading" secondItem="sNh-IL-ti5" secondAttribute="trailing" constant="12" id="G7b-Pl-6AU"/>
+                            <constraint firstItem="umS-qS-1jV" firstAttribute="width" secondItem="umS-qS-1jV" secondAttribute="height" id="Gh5-U3-LSB"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="leading" secondItem="dZN-zd-pmK" secondAttribute="trailing" constant="8" id="HVj-YM-5ba"/>
+                            <constraint firstItem="sNh-IL-ti5" firstAttribute="bottom" secondItem="aB3-IY-3sc" secondAttribute="bottom" constant="-3" id="Hfw-o8-3wU"/>
+                            <constraint firstItem="aB3-IY-3sc" firstAttribute="top" secondItem="dZN-zd-pmK" secondAttribute="bottom" constant="60" id="K9f-jG-1G3"/>
+                            <constraint firstItem="Keb-9d-OXc" firstAttribute="top" secondItem="wbn-Ks-uqt" secondAttribute="bottom" constant="8" id="LIT-Tb-dLm"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="top" secondItem="wbn-Ks-uqt" secondAttribute="bottom" constant="113" id="LoB-gR-3JY"/>
+                            <constraint firstItem="cjx-1L-JBi" firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="height" multiplier="1:1" id="PSD-Bh-SCT"/>
+                            <constraint firstItem="MhS-xQ-8lO" firstAttribute="top" secondItem="aB3-IY-3sc" secondAttribute="bottom" constant="60" id="Q2k-ip-mrc"/>
+                            <constraint firstItem="Fmo-rJ-l1x" firstAttribute="bottom" secondItem="aB3-IY-3sc" secondAttribute="bottom" constant="-3" id="RjU-d9-fVY"/>
+                            <constraint firstItem="vCs-az-g8b" firstAttribute="width" secondItem="vCs-az-g8b" secondAttribute="height" id="SYx-iE-PnV"/>
+                            <constraint firstItem="sNh-IL-ti5" firstAttribute="width" secondItem="sNh-IL-ti5" secondAttribute="height" id="TBK-1d-1rX"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="bottom" secondItem="dZN-zd-pmK" secondAttribute="bottom" constant="-3" id="Uck-QY-Zwe"/>
+                            <constraint firstItem="Fmo-rJ-l1x" firstAttribute="height" secondItem="aB3-IY-3sc" secondAttribute="height" id="Uxs-6L-guD"/>
+                            <constraint firstItem="umS-qS-1jV" firstAttribute="leading" secondItem="MhS-xQ-8lO" secondAttribute="trailing" constant="8" id="VZC-Cp-Nsg"/>
+                            <constraint firstAttribute="centerX" secondItem="dZN-zd-pmK" secondAttribute="centerX" id="VdA-fK-Knc"/>
+                            <constraint firstItem="cjx-1L-JBi" firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="height" multiplier="1:1" id="Y15-DU-zzB"/>
+                            <constraint firstItem="cjx-1L-JBi" firstAttribute="height" secondItem="dZN-zd-pmK" secondAttribute="height" id="b7I-ff-EfK"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="width" secondItem="cjx-1L-JBi" secondAttribute="width" id="bWW-7e-OBl"/>
+                            <constraint firstItem="umS-qS-1jV" firstAttribute="bottom" secondItem="MhS-xQ-8lO" secondAttribute="bottom" constant="-3" id="bfv-AH-qU4"/>
+                            <constraint firstAttribute="centerX" secondItem="aB3-IY-3sc" secondAttribute="centerX" id="cEF-L7-ksg"/>
+                            <constraint firstItem="vCs-az-g8b" firstAttribute="height" secondItem="MhS-xQ-8lO" secondAttribute="height" id="d1g-vT-cXO"/>
+                            <constraint firstItem="umS-qS-1jV" firstAttribute="height" secondItem="MhS-xQ-8lO" secondAttribute="height" id="fS0-wl-UFx"/>
+                            <constraint firstItem="umS-qS-1jV" firstAttribute="width" secondItem="umS-qS-1jV" secondAttribute="height" id="hvN-Y2-9v7"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="height" secondItem="dZN-zd-pmK" secondAttribute="height" id="kRr-Hf-v6C"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="top" secondItem="Keb-9d-OXc" secondAttribute="bottom" constant="30" id="kfD-xw-HVF"/>
+                            <constraint firstItem="cjx-1L-JBi" firstAttribute="bottom" secondItem="dZN-zd-pmK" secondAttribute="bottom" constant="-3" id="kuZ-18-wnQ"/>
+                            <constraint firstItem="vCs-az-g8b" firstAttribute="width" secondItem="vCs-az-g8b" secondAttribute="height" id="mtu-aV-Tpd"/>
+                            <constraint firstItem="dZN-zd-pmK" firstAttribute="top" secondItem="Keb-9d-OXc" secondAttribute="bottom" constant="30" id="mzN-Y7-OEO"/>
+                            <constraint firstItem="sNh-IL-ti5" firstAttribute="height" secondItem="aB3-IY-3sc" secondAttribute="height" id="pN7-h6-Gyc"/>
+                            <constraint firstAttribute="centerX" secondItem="Keb-9d-OXc" secondAttribute="centerX" id="pO6-9a-A7H"/>
+                            <constraint firstItem="MhS-xQ-8lO" firstAttribute="leading" secondItem="vCs-az-g8b" secondAttribute="trailing" constant="12" id="qsM-EF-Sxy"/>
+                            <constraint firstItem="Keb-9d-OXc" firstAttribute="leading" secondItem="TOU-41-k0j" secondAttribute="trailing" constant="-58" id="r2t-vc-vL1"/>
+                            <constraint firstItem="vCs-az-g8b" firstAttribute="bottom" secondItem="MhS-xQ-8lO" secondAttribute="bottom" constant="-3" id="x5b-3v-FK3"/>
+                            <constraint firstItem="Keb-9d-OXc" firstAttribute="width" secondItem="b5M-Me-oOD" secondAttribute="width" id="xgu-ba-MIT"/>
+                            <constraint firstAttribute="centerX" secondItem="MhS-xQ-8lO" secondAttribute="centerX" id="xk6-Ij-nzg"/>
+                            <constraint firstItem="a1W-VF-Vht" firstAttribute="height" secondItem="cjx-1L-JBi" secondAttribute="height" id="zZC-TB-X3R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PSD-Bh-SCT"/>
+                                <exclude reference="Y15-DU-zzB"/>
+                                <exclude reference="A11-74-0ga"/>
+                                <exclude reference="CJN-Vz-rEt"/>
+                                <exclude reference="FZR-NE-JPR"/>
+                                <exclude reference="LoB-gR-3JY"/>
+                                <exclude reference="bWW-7e-OBl"/>
+                                <exclude reference="kfD-xw-HVF"/>
+                                <exclude reference="zZC-TB-X3R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fiftyDollars" destination="sNh-IL-ti5" id="dpM-bm-xyC"/>
+                        <outlet property="onehundredDollars" destination="vCs-az-g8b" id="ycu-KZ-tEs"/>
+                        <outlet property="onehundredfiftyDollars" destination="umS-qS-1jV" id="msO-Q4-V3S"/>
+                        <outlet property="seventyfiveDollars" destination="Fmo-rJ-l1x" id="TPg-rN-S1C"/>
+                        <outlet property="thirtyfiveDollars" destination="a1W-VF-Vht" id="aiR-Dx-iCU"/>
+                        <outlet property="twentyDollars" destination="cjx-1L-JBi" id="EJC-16-AWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGM-tH-xrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rk3-b1-G8a" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3156" y="358"/>
+        </scene>
+        <!--PriceViewController-->
+        <scene sceneID="kzR-lO-Gry">
+            <objects>
+                <viewController title="PriceViewController" id="bx3-uE-0hE" customClass="VenueViewController" customModule="Noflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdf-AR-2eo"/>
+                        <viewControllerLayoutGuide type="bottom" id="WdM-Nh-0rW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qsd-w0-sTj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wO3-Bm-GJn">
+                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhx-Mu-dj0">
+                                <rect key="frame" x="120" y="130" width="148" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="height" multiplier="1:1" id="4Lt-NT-PvC"/>
+                                    <constraint firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="height" id="PfT-Rj-Xa8"/>
+                                    <constraint firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="height" multiplier="1:1" id="T7o-aX-p1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Restaurants">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4Lt-NT-PvC"/>
+                                        <exclude reference="T7o-aX-p1D"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McM-HN-WKx">
+                                <rect key="frame" x="328" y="130" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="McM-HN-WKx" secondAttribute="height" id="TLn-6L-3RE"/>
+                                    <constraint firstAttribute="width" secondItem="McM-HN-WKx" secondAttribute="height" multiplier="1:1" id="wLQ-vZ-ZCt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Movies">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wLQ-vZ-ZCt"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48E-Z5-TFi">
+                                <rect key="frame" x="280" y="133" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="cIz-Xg-eIW"/>
+                                    <constraint firstAttribute="height" constant="130" id="xbT-FA-ZSJ"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eJ-PU-pg1">
+                                <rect key="frame" x="138" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2eJ-PU-pg1" secondAttribute="height" multiplier="1:1" id="QZf-tC-0no"/>
+                                    <constraint firstAttribute="width" secondItem="2eJ-PU-pg1" secondAttribute="height" id="Rht-7X-RkX"/>
+                                    <constraint firstAttribute="width" secondItem="2eJ-PU-pg1" secondAttribute="height" multiplier="1:1" id="pSW-OU-GYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Exhibits">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pSW-OU-GYb"/>
+                                        <exclude reference="QZf-tC-0no"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H1-hC-jhz">
+                                <rect key="frame" x="328" y="320" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4H1-hC-jhz" secondAttribute="height" id="Wkr-lQ-Qgl"/>
+                                    <constraint firstAttribute="width" secondItem="4H1-hC-jhz" secondAttribute="height" multiplier="1:1" id="i8b-nM-prM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Active">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i8b-nM-prM"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-sp-75e">
+                                <rect key="frame" x="280" y="323" width="40" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7Nk-3n-cYb"/>
+                                    <constraint firstAttribute="height" constant="130" id="zfa-lP-Hxh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yns-tG-KBF">
+                                <rect key="frame" x="235" y="510" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yns-tG-KBF" secondAttribute="height" multiplier="1:1" id="FcP-yw-BAt"/>
+                                    <constraint firstAttribute="width" secondItem="Yns-tG-KBF" secondAttribute="height" multiplier="1:1" id="SSm-1E-Lr7"/>
+                                    <constraint firstAttribute="width" secondItem="Yns-tG-KBF" secondAttribute="height" id="pJt-gL-8og"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Shows">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SSm-1E-Lr7"/>
+                                        <exclude reference="FcP-yw-BAt"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7j-Qi-dZn">
+                                <rect key="frame" x="16" y="49" width="42" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1rE-qz-kug" kind="unwind" unwindAction="unwindToVCLocation:" id="Cfe-vm-MrB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.14804320269999999" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="8a8-sp-75e" secondAttribute="centerX" id="9Ui-3o-Nea"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="height" secondItem="48E-Z5-TFi" secondAttribute="height" id="CLy-TI-kiK"/>
+                            <constraint firstItem="48E-Z5-TFi" firstAttribute="leading" secondItem="Xhx-Mu-dj0" secondAttribute="trailing" constant="12" id="EqR-P0-SlI"/>
+                            <constraint firstItem="Xhx-Mu-dj0" firstAttribute="height" secondItem="48E-Z5-TFi" secondAttribute="height" id="F49-Eg-NoR"/>
+                            <constraint firstItem="Yns-tG-KBF" firstAttribute="height" secondItem="8a8-sp-75e" secondAttribute="height" id="LBP-YY-eRn"/>
+                            <constraint firstAttribute="centerX" secondItem="McM-HN-WKx" secondAttribute="centerX" constant="-3" id="Mlp-He-KZf"/>
+                            <constraint firstItem="Xhx-Mu-dj0" firstAttribute="bottom" secondItem="48E-Z5-TFi" secondAttribute="bottom" constant="-3" id="MsW-vm-ROH"/>
+                            <constraint firstItem="Xhx-Mu-dj0" firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="height" multiplier="1:1" id="NJx-s4-fwK"/>
+                            <constraint firstItem="Xhx-Mu-dj0" firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="height" multiplier="1:1" id="ONV-sn-fuL"/>
+                            <constraint firstAttribute="centerX" secondItem="48E-Z5-TFi" secondAttribute="centerX" id="Sz3-FS-HJn"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="top" secondItem="cdf-AR-2eo" secondAttribute="bottom" constant="113" id="TXR-DH-G1f"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="height" secondItem="Xhx-Mu-dj0" secondAttribute="height" id="TXx-Ie-yha"/>
+                            <constraint firstItem="Yns-tG-KBF" firstAttribute="top" secondItem="8a8-sp-75e" secondAttribute="bottom" constant="57" id="Tvq-hz-315"/>
+                            <constraint firstItem="4H1-hC-jhz" firstAttribute="bottom" secondItem="8a8-sp-75e" secondAttribute="bottom" constant="-3" id="U0S-JO-L7U"/>
+                            <constraint firstItem="Yns-tG-KBF" firstAttribute="width" secondItem="Yns-tG-KBF" secondAttribute="height" id="XeV-XM-uel"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="leading" secondItem="48E-Z5-TFi" secondAttribute="trailing" constant="8" id="ZkJ-5A-OGv"/>
+                            <constraint firstItem="4H1-hC-jhz" firstAttribute="leading" secondItem="8a8-sp-75e" secondAttribute="trailing" constant="8" id="aIi-dX-isY"/>
+                            <constraint firstItem="wO3-Bm-GJn" firstAttribute="leading" secondItem="I7j-Qi-dZn" secondAttribute="trailing" constant="-58" id="aJa-GS-1Ga"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="leading" secondItem="Xhx-Mu-dj0" secondAttribute="trailing" constant="40" id="ar2-2N-d8f"/>
+                            <constraint firstAttribute="centerX" secondItem="wO3-Bm-GJn" secondAttribute="centerX" id="bQt-5f-ZVp"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="bottom" secondItem="Xhx-Mu-dj0" secondAttribute="bottom" id="bwe-Ln-rE5"/>
+                            <constraint firstItem="2eJ-PU-pg1" firstAttribute="width" secondItem="2eJ-PU-pg1" secondAttribute="height" id="fsN-AV-Z2n"/>
+                            <constraint firstItem="4H1-hC-jhz" firstAttribute="height" secondItem="8a8-sp-75e" secondAttribute="height" id="g7e-Fp-xLZ"/>
+                            <constraint firstAttribute="centerX" secondItem="Yns-tG-KBF" secondAttribute="centerX" id="ggd-E9-od7"/>
+                            <constraint firstItem="4H1-hC-jhz" firstAttribute="width" secondItem="4H1-hC-jhz" secondAttribute="height" id="jiP-ud-o4I"/>
+                            <constraint firstItem="2eJ-PU-pg1" firstAttribute="bottom" secondItem="8a8-sp-75e" secondAttribute="bottom" constant="-3" id="jtB-p2-jzn"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="top" secondItem="wO3-Bm-GJn" secondAttribute="bottom" constant="30" id="jyX-vy-CRq"/>
+                            <constraint firstItem="48E-Z5-TFi" firstAttribute="top" secondItem="wO3-Bm-GJn" secondAttribute="bottom" constant="30" id="k6D-6I-Ikr"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="width" secondItem="Xhx-Mu-dj0" secondAttribute="width" id="lcG-Jc-WHW"/>
+                            <constraint firstItem="wO3-Bm-GJn" firstAttribute="width" secondItem="qsd-w0-sTj" secondAttribute="width" id="ngh-RT-XIe"/>
+                            <constraint firstItem="8a8-sp-75e" firstAttribute="leading" secondItem="2eJ-PU-pg1" secondAttribute="trailing" constant="12" id="o1n-Zx-ab0"/>
+                            <constraint firstItem="I7j-Qi-dZn" firstAttribute="centerY" secondItem="wO3-Bm-GJn" secondAttribute="centerY" constant="0.5" id="o6e-fX-aju"/>
+                            <constraint firstItem="8a8-sp-75e" firstAttribute="top" secondItem="48E-Z5-TFi" secondAttribute="bottom" constant="60" id="sjl-ak-anz"/>
+                            <constraint firstItem="wO3-Bm-GJn" firstAttribute="top" secondItem="cdf-AR-2eo" secondAttribute="bottom" constant="8" id="t8P-66-sDa"/>
+                            <constraint firstItem="2eJ-PU-pg1" firstAttribute="height" secondItem="8a8-sp-75e" secondAttribute="height" id="u9d-ro-rzo"/>
+                            <constraint firstItem="McM-HN-WKx" firstAttribute="bottom" secondItem="48E-Z5-TFi" secondAttribute="bottom" constant="-3" id="xwX-Og-O4z"/>
+                            <constraint firstItem="Yns-tG-KBF" firstAttribute="width" secondItem="Yns-tG-KBF" secondAttribute="height" id="yfC-oh-WOi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NJx-s4-fwK"/>
+                                <exclude reference="ONV-sn-fuL"/>
+                                <exclude reference="Mlp-He-KZf"/>
+                                <exclude reference="TXR-DH-G1f"/>
+                                <exclude reference="TXx-Ie-yha"/>
+                                <exclude reference="ar2-2N-d8f"/>
+                                <exclude reference="bwe-Ln-rE5"/>
+                                <exclude reference="jyX-vy-CRq"/>
+                                <exclude reference="lcG-Jc-WHW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="active" destination="4H1-hC-jhz" id="w3Y-O2-Xa5"/>
+                        <outlet property="exhibits" destination="2eJ-PU-pg1" id="bwO-ql-dId"/>
+                        <outlet property="movies" destination="McM-HN-WKx" id="8Hi-uj-9JU"/>
+                        <outlet property="restaurants" destination="Xhx-Mu-dj0" id="cSr-bS-AZD"/>
+                        <outlet property="shows" destination="Yns-tG-KBF" id="ePY-DM-OO4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urN-0S-fOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1rE-qz-kug" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3839" y="358"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eCF-uo-yTb"/>
+        <segue reference="qif-Rl-JJy"/>
+    </inferredMetricsTieBreakers>
 </document>

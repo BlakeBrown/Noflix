@@ -11,33 +11,37 @@ import UIKit
 class BusinessesViewController: UIViewController {
 
     @IBOutlet weak var maleBtn: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    var colourIndex = -1;
+    var colourArray: [UIColor!] = [UIColor(red: 234.0/255, green: 253.0/255, blue: 230.0/255, alpha: 1.0),
+        UIColor(red: 190.0/255, green: 242.0/255, blue: 2.0/255, alpha: 1.0),
+        UIColor(red: 234.0/255, green: 255.0/255, blue: 135.0/255, alpha: 1.0),
+        UIColor(red: 172.0/255, green: 255.0/255, blue: 233.0/255, alpha: 1.0),
+        UIColor(red: 232.0/255, green: 70.0/255, blue: 36.0/255, alpha: 1.0),
+        UIColor(red: 232.0/255, green: 167.0/255, blue: 38.0/255, alpha: 1.0),
+        UIColor(red: 255.0/255, green: 144.0/255, blue: 171.0/255, alpha: 1.0),
+        UIColor(red: 225.0/255, green: 245.0/255, blue: 196.0/255, alpha: 1.0),
+        UIColor(red: 240.0/255, green: 57.0/255, blue: 43.0/255, alpha: 1.0),
+        UIColor(red: 235.0/255, green: 235.0/255, blue: 207.0/255, alpha: 1.0)]
     
     var businesses: [Business]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
+        
+//        Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["italian"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
 //            self.businesses = businesses
 //            
-//            for business in businesses {
-//                println(business.name!)
-//                println(business.address!)
+//            if (businesses != nil){
+//                for business in businesses {
+//                    print(business.name!)
+//                    print(" | ")
+//                    print(business.address!)
+//                    print(" \n")
+//                }
 //            }
-//        })
-        
-        Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["italian"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-            self.businesses = businesses
-            
-            if (businesses != nil){
-                for business in businesses {
-                    print(business.name!)
-                    print(" | ")
-                    print(business.address!)
-                    print(" \n")
-                }
-            }
-        }
+//        }
         
         let borderAlpha : CGFloat = 0.8
         let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.height*0.25*0.5
@@ -47,6 +51,29 @@ class BusinessesViewController: UIViewController {
         maleBtn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         maleBtn.layer.cornerRadius = cornerRadius
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        changeColour()
+    }
+    
+    func changeColour(){
+        self.colourIndex++;
+        if (self.colourIndex == colourArray.count){
+            self.colourIndex = 0;
+        }
+        UIView.transitionWithView(titleLabel, duration: 1, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+            self.titleLabel.textColor = self.colourArray[self.colourIndex]
+            }, completion: { finished in
+                self.changeColour()
+        })
+    }
+    
+    @IBAction func unwindToVCMain(segue: UIStoryboardSegue) {
+        if(segue.sourceViewController .isKindOfClass(LocationViewController))
+        {
+            print("back to main");
+        }
     }
 
     override func didReceiveMemoryWarning() {

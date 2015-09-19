@@ -23,15 +23,16 @@ class LocationViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let borderAlpha : CGFloat = 0.8
-        let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.height*0.25*0.5
+//        let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.width*0.25*0.5
+        let cornerRadius : CGFloat = 65
         
         fivekm.backgroundColor = UIColor.clearColor()
-        fivekm.layer.borderWidth = 8.0
+        fivekm.layer.borderWidth = 5.0
         fivekm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         fivekm.layer.cornerRadius = cornerRadius
         
         tenkm.backgroundColor = UIColor.clearColor()
-        tenkm.layer.borderWidth = 8.0
+        tenkm.layer.borderWidth = 5.0
         tenkm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         tenkm.layer.cornerRadius = cornerRadius
         
@@ -40,24 +41,59 @@ class LocationViewController: UIViewController {
         fifteenkm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         fifteenkm.layer.cornerRadius = cornerRadius
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        twentyfivekm.backgroundColor = UIColor.clearColor()
+        twentyfivekm.layer.borderWidth = 8.0
+        twentyfivekm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
+        twentyfivekm.layer.cornerRadius = cornerRadius
         
-
+        thirtyfivekm.backgroundColor = UIColor.clearColor()
+        thirtyfivekm.layer.borderWidth = 11.0
+        thirtyfivekm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
+        thirtyfivekm.layer.cornerRadius = cornerRadius
+        
+        fiftykm.backgroundColor = UIColor.clearColor()
+        fiftykm.layer.borderWidth = 11.0
+        fiftykm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
+        fiftykm.layer.cornerRadius = cornerRadius
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func unwindToVCLocation(segue: UIStoryboardSegue) {
+        if(segue.sourceViewController .isKindOfClass(LocationViewController))
+        {
+            print("back to location");
+        }
     }
-    */
+    
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "5") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 5
+        }
+        if (segue.identifier == "10") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 10
+        }
+        if (segue.identifier == "15") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 15
+            
+        }
+        if (segue.identifier == "25") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 25
+        }
+        if (segue.identifier == "35") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 35
+            
+        }
+        if (segue.identifier == "50") {
+            var price : PriceViewController = segue.destinationViewController as! PriceViewController
+            price.locationRadius = 50
+        }
+    }
+    
 
 }
