@@ -12,16 +12,15 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var fivekm: UIButton!
     @IBOutlet weak var tenkm: UIButton!
     @IBOutlet weak var fifteenkm: UIButton!
+    @IBOutlet weak var twentyfivekm: UIButton!
+    @IBOutlet weak var thirtyfivekm: UIButton!
+    @IBOutlet weak var fiftykm: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
         
         let borderAlpha : CGFloat = 0.8
         let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.height*0.25*0.5
@@ -40,6 +39,14 @@ class LocationViewController: UIViewController {
         fifteenkm.layer.borderWidth = 8.0
         fifteenkm.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor
         fifteenkm.layer.cornerRadius = cornerRadius
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+        
+
     }
     
 
