@@ -66,14 +66,44 @@ class PriceViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "20") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 20
+            venue.locationRadius = self.locationRadius
+        }
+        if (segue.identifier == "35") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 35
+            venue.locationRadius = self.locationRadius
+        }
+        if (segue.identifier == "50") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 50
+            venue.locationRadius = self.locationRadius
+            
+        }
+        if (segue.identifier == "75") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 75
+            venue.locationRadius = self.locationRadius
+        }
+        if (segue.identifier == "100") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 100
+            venue.locationRadius = self.locationRadius
+            
+        }
+        if (segue.identifier == "150") {
+            var venue : VenueViewController = segue.destinationViewController as! VenueViewController
+            venue.price = 150
+            venue.locationRadius = self.locationRadius
+        }
     }
-    */
+
 
 }

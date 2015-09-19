@@ -15,6 +15,7 @@ class Business: NSObject {
     let categories: String?
     let distance: String?
     let ratingImageURL: NSURL?
+    let rating: NSNumber?
     let reviewCount: NSNumber?
     
     init(dictionary: NSDictionary) {
@@ -74,6 +75,7 @@ class Business: NSObject {
             ratingImageURL = nil
         }
         
+        rating = dictionary["rating"] as? NSNumber
         reviewCount = dictionary["review_count"] as? NSNumber
     }
     

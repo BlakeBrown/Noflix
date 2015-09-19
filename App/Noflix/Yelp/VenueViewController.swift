@@ -16,6 +16,9 @@ class VenueViewController: UIViewController {
     @IBOutlet weak var active: UIButton!
     @IBOutlet weak var shows: UIButton!
     
+    var price: Int!
+    var locationRadius: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,14 +58,43 @@ class VenueViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "restaurants") {
+            var final : FinalViewController = segue.destinationViewController as! FinalViewController
+            final.price = self.price
+            final.locationRadius = self.locationRadius
+            final.venue = "restaurant"
+        }
+        if (segue.identifier == "movies") {
+            var final : FinalViewController = segue.destinationViewController as! FinalViewController
+            final.price = self.price
+            final.locationRadius = self.locationRadius
+            final.venue = "movie"
+        }
+        if (segue.identifier == "active") {
+            var final : FinalViewController = segue.destinationViewController as! FinalViewController
+            final.price = self.price
+            final.locationRadius = self.locationRadius
+            final.venue = "active"
+            
+        }
+        if (segue.identifier == "exhibits") {
+            var final : FinalViewController = segue.destinationViewController as! FinalViewController
+            final.price = self.price
+            final.locationRadius = self.locationRadius
+            final.venue = "exhibit"
+        }
+        if (segue.identifier == "shows") {
+            var final : FinalViewController = segue.destinationViewController as! FinalViewController
+            final.price = self.price
+            final.locationRadius = self.locationRadius
+            final.venue = "show"
+            
+        }
     }
-    */
+
 
 }
