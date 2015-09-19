@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F19a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2xI-yr-O5N">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+            <string>Comfortaa-Bold</string>
+        </mutableArray>
+        <mutableArray key="Comfortaa-Light.ttf">
+            <string>Comfortaa-Light</string>
+        </mutableArray>
+        <mutableArray key="Lobster-1.4.otf">
+            <string>Lobster1.4</string>
+            <string>Lobster1.4</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Businesses View Controller-->
+        <scene sceneID="5L9-Uz-lNK">
+            <objects>
+                <viewController id="2xI-yr-O5N" customClass="BusinessesViewController" customModule="Noflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hR0-74-jRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="VBY-gq-v8E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XhR-oz-92f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu9-NM-qmh">
+                                <rect key="frame" x="252" y="70" width="97" height="18"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Light" family="Comfortaa" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Noflix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49X-Ps-hgn">
+                                <rect key="frame" x="232" y="98" width="137" height="75"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-Cc-VJ1">
+                                <rect key="frame" x="225" y="329" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VBP-Cc-VJ1" secondAttribute="height" multiplier="1:1" id="o9l-xO-ptZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="Begin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="B1f-sB-DGN" kind="show" id="qfL-zZ-7u0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.64464359530606397" blue="0.33393891876909043" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VBP-Cc-VJ1" firstAttribute="leading" secondItem="XhR-oz-92f" secondAttribute="leadingMargin" id="0wf-h9-oTa"/>
+                            <constraint firstAttribute="centerX" secondItem="49X-Ps-hgn" secondAttribute="centerX" id="6zu-RD-s7j"/>
+                            <constraint firstAttribute="centerX" secondItem="VBP-Cc-VJ1" secondAttribute="centerX" id="AEh-74-q1u"/>
+                            <constraint firstItem="VBP-Cc-VJ1" firstAttribute="height" secondItem="XhR-oz-92f" secondAttribute="height" multiplier="1:4" id="FT6-eS-fas"/>
+                            <constraint firstAttribute="centerX" secondItem="VBP-Cc-VJ1" secondAttribute="centerX" id="IZM-G0-8SQ"/>
+                            <constraint firstItem="tu9-NM-qmh" firstAttribute="top" secondItem="hR0-74-jRp" secondAttribute="bottom" constant="50" id="K2m-Og-Q8v"/>
+                            <constraint firstItem="VBY-gq-v8E" firstAttribute="top" secondItem="VBP-Cc-VJ1" secondAttribute="bottom" constant="119" id="PbM-NS-LoZ"/>
+                            <constraint firstItem="VBP-Cc-VJ1" firstAttribute="width" secondItem="XhR-oz-92f" secondAttribute="width" multiplier="1:3" id="U82-0t-mKm"/>
+                            <constraint firstItem="49X-Ps-hgn" firstAttribute="top" secondItem="tu9-NM-qmh" secondAttribute="bottom" constant="10" id="W8d-UD-xfF"/>
+                            <constraint firstAttribute="centerY" secondItem="49X-Ps-hgn" secondAttribute="centerY" constant="182.5" id="dys-e7-f2G"/>
+                            <constraint firstAttribute="centerX" secondItem="tu9-NM-qmh" secondAttribute="centerX" constant="-0.5" id="lvy-kH-09I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dys-e7-f2G"/>
+                                <exclude reference="0wf-h9-oTa"/>
+                                <exclude reference="IZM-G0-8SQ"/>
+                                <exclude reference="U82-0t-mKm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="maleBtn" destination="VBP-Cc-VJ1" id="Fm2-1c-X2D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="358"/>
+        </scene>
+        <!--Location View Controller-->
+        <scene sceneID="Vah-uA-uwU">
+            <objects>
+                <viewController id="B1f-sB-DGN" customClass="LocationViewController" customModule="Noflix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kny-hj-RY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="0RX-RP-MV4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Y3-GA-twx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2N-CE-eua">
+                                <rect key="frame" x="35" y="124" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n2N-CE-eua" secondAttribute="height" multiplier="1:1" id="EfQ-9X-paI"/>
+                                    <constraint firstAttribute="width" secondItem="n2N-CE-eua" secondAttribute="height" multiplier="1:1" id="fOt-go-dT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;5 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fOt-go-dT8"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-pY-vDT">
+                                <rect key="frame" x="209" y="28" width="183" height="75"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjB-gX-uRw">
+                                <rect key="frame" x="226" y="124" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rjB-gX-uRw" secondAttribute="height" multiplier="1:1" id="Nus-k3-Phu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;10 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Nus-k3-Phu"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRl-7w-Dk4">
+                                <rect key="frame" x="415" y="124" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NRl-7w-Dk4" secondAttribute="height" multiplier="1:1" id="z7a-bn-CnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;15 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="z7a-bn-CnW"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPK-br-3iN">
+                                <rect key="frame" x="36" y="291" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="wAa-Xg-xZ4"/>
+                                    <constraint firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="yV0-l7-IAk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;25 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wAa-Xg-xZ4"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwf-8x-Opq">
+                                <rect key="frame" x="227" y="291" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xwf-8x-Opq" secondAttribute="height" multiplier="1:1" id="sdO-ep-I58"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;35 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sdO-ep-I58"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egR-Jl-mtX">
+                                <rect key="frame" x="416" y="291" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="egR-Jl-mtX" secondAttribute="height" multiplier="1:1" id="enA-Ag-PZm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="25"/>
+                                <state key="normal" title="&lt;50 km">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="enA-Ag-PZm"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.64464359530000004" blue="0.33393891879999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="egR-Jl-mtX" firstAttribute="width" secondItem="Xwf-8x-Opq" secondAttribute="width" id="48i-jS-dmn"/>
+                            <constraint firstAttribute="centerX" secondItem="Cle-pY-vDT" secondAttribute="centerX" id="50T-Ty-8Sk"/>
+                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="bottom" secondItem="BPK-br-3iN" secondAttribute="bottom" id="8Sg-q5-rlH"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="width" secondItem="NRl-7w-Dk4" secondAttribute="height" multiplier="1:1" id="A5a-HS-efl"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="width" secondItem="NRl-7w-Dk4" secondAttribute="height" multiplier="1:1" id="AXz-mN-qcu"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="leading" secondItem="n2N-CE-eua" secondAttribute="trailing" constant="40" id="Ad4-Qn-kPt"/>
+                            <constraint firstItem="egR-Jl-mtX" firstAttribute="bottom" secondItem="Xwf-8x-Opq" secondAttribute="bottom" id="E52-5a-flB"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="width" secondItem="rjB-gX-uRw" secondAttribute="height" multiplier="1:1" id="NdX-pn-haB"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="width" secondItem="rjB-gX-uRw" secondAttribute="height" multiplier="1:1" id="RLe-4B-ND9"/>
+                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="top" secondItem="rjB-gX-uRw" secondAttribute="bottom" constant="17" id="b01-FM-KQC"/>
+                            <constraint firstItem="BPK-br-3iN" firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="height" multiplier="1:1" id="bct-aS-pWz"/>
+                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="height" secondItem="BPK-br-3iN" secondAttribute="height" id="e6z-2c-WhO"/>
+                            <constraint firstItem="n2N-CE-eua" firstAttribute="width" secondItem="n2N-CE-eua" secondAttribute="height" multiplier="1:1" id="gKI-aB-hCO"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="bottom" secondItem="n2N-CE-eua" secondAttribute="bottom" id="gOS-f4-Ic4"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="leading" secondItem="rjB-gX-uRw" secondAttribute="trailing" constant="40" id="hSH-hG-s8H"/>
+                            <constraint firstAttribute="centerX" secondItem="rjB-gX-uRw" secondAttribute="centerX" id="hiy-S4-IfW"/>
+                            <constraint firstAttribute="centerX" secondItem="Xwf-8x-Opq" secondAttribute="centerX" id="jdL-wt-2e0"/>
+                            <constraint firstAttribute="height" secondItem="n2N-CE-eua" secondAttribute="height" multiplier="4:1" id="kKD-zR-2mN"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="width" secondItem="rjB-gX-uRw" secondAttribute="width" id="kTM-TX-hLO"/>
+                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="width" secondItem="BPK-br-3iN" secondAttribute="width" id="lK4-18-2nP"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="width" secondItem="NRl-7w-Dk4" secondAttribute="height" multiplier="1:1" id="mch-lg-W16"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="top" secondItem="Cle-pY-vDT" secondAttribute="bottom" constant="21" id="oqR-Ns-5DN"/>
+                            <constraint firstItem="egR-Jl-mtX" firstAttribute="leading" secondItem="Xwf-8x-Opq" secondAttribute="trailing" constant="40" id="pNc-pJ-VK8"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="height" secondItem="rjB-gX-uRw" secondAttribute="height" id="qHg-zb-ap3"/>
+                            <constraint firstItem="egR-Jl-mtX" firstAttribute="height" secondItem="Xwf-8x-Opq" secondAttribute="height" id="ri9-6a-sz3"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="width" secondItem="n2N-CE-eua" secondAttribute="width" id="s3g-Kt-gbG"/>
+                            <constraint firstItem="Cle-pY-vDT" firstAttribute="top" secondItem="kny-hj-RY5" secondAttribute="bottom" constant="8" id="uAV-Xv-sJ4"/>
+                            <constraint firstItem="Xwf-8x-Opq" firstAttribute="leading" secondItem="BPK-br-3iN" secondAttribute="trailing" constant="40" id="wfs-TR-OYn"/>
+                            <constraint firstItem="NRl-7w-Dk4" firstAttribute="bottom" secondItem="rjB-gX-uRw" secondAttribute="bottom" id="xMC-F0-8jV"/>
+                            <constraint firstItem="rjB-gX-uRw" firstAttribute="height" secondItem="n2N-CE-eua" secondAttribute="height" id="z8E-c7-fNc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gKI-aB-hCO"/>
+                                <exclude reference="NdX-pn-haB"/>
+                                <exclude reference="RLe-4B-ND9"/>
+                                <exclude reference="A5a-HS-efl"/>
+                                <exclude reference="AXz-mN-qcu"/>
+                                <exclude reference="mch-lg-W16"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="fifteenkm" destination="NRl-7w-Dk4" id="ICb-ZQ-HCo"/>
+                        <outlet property="fivekm" destination="n2N-CE-eua" id="3Bt-wf-9Tz"/>
+                        <outlet property="tenkm" destination="rjB-gX-uRw" id="I0x-CR-Zw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r38-18-WbB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2482" y="358"/>
+        </scene>
+    </scenes>
+</document>
