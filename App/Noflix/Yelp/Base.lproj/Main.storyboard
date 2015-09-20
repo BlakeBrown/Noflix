@@ -43,6 +43,8 @@
             <string>Lobster1.4</string>
             <string>Lobster1.4</string>
             <string>Lobster1.4</string>
+            <string>Lobster1.4</string>
+            <string>Lobster1.4</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -943,6 +945,9 @@
                                         <exclude reference="NvO-Vv-Mg1"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="UxE-K4-7ad" kind="show" id="UOY-sp-YRC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
@@ -993,9 +998,57 @@
             </objects>
             <point key="canvasLocation" x="4506" y="358"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="nLB-8Q-zsS">
+            <objects>
+                <viewController id="UxE-K4-7ad" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rgV-eq-bG4"/>
+                        <viewControllerLayoutGuide type="bottom" id="2LB-YL-CG9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J2v-Xr-1ka">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Uber is Coming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAl-Dj-byE">
+                                <rect key="frame" x="155" y="277" width="290" height="45"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3d-xU-SPg">
+                                <rect key="frame" x="259" y="345" width="83" height="21"/>
+                                <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="noun_74808_cc" translatesAutoresizingMaskIntoConstraints="NO" id="QtA-zK-sfu">
+                                <rect key="frame" x="285" y="398" width="30" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Qaa-1a-44r"/>
+                                    <constraint firstAttribute="width" secondItem="QtA-zK-sfu" secondAttribute="height" multiplier="5:8" id="yUu-aE-yeI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YAl-Dj-byE" firstAttribute="centerX" secondItem="J2v-Xr-1ka" secondAttribute="centerX" id="03K-K3-Fx2"/>
+                            <constraint firstItem="YAl-Dj-byE" firstAttribute="centerY" secondItem="J2v-Xr-1ka" secondAttribute="centerY" id="6ra-o2-nfO"/>
+                            <constraint firstItem="QtA-zK-sfu" firstAttribute="top" secondItem="c3d-xU-SPg" secondAttribute="bottom" constant="28" id="GGv-c6-bgw"/>
+                            <constraint firstItem="c3d-xU-SPg" firstAttribute="top" secondItem="YAl-Dj-byE" secondAttribute="bottom" constant="8" id="Ngh-qy-5rU"/>
+                            <constraint firstItem="c3d-xU-SPg" firstAttribute="centerX" secondItem="J2v-Xr-1ka" secondAttribute="centerX" id="bAZ-NW-u8d"/>
+                            <constraint firstItem="QtA-zK-sfu" firstAttribute="centerX" secondItem="J2v-Xr-1ka" secondAttribute="centerX" id="fX3-aQ-D11"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPP-s5-v3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5178" y="358"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back_btn" width="403" height="403"/>
+        <image name="noun_74808_cc" width="367" height="548"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qif-Rl-JJy"/>

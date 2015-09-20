@@ -44,7 +44,7 @@ class FinalViewController: UIViewController {
         let borderAlpha : CGFloat = 0.8
         let cornerRadius : CGFloat = 87.5
         StartAdventureBtn.setTitle("Start Your Adventure!", forState: .Normal)
-        
+        self.StartAdventureBtn.titleLabel?.adjustsFontSizeToFitWidth = true
         StartAdventureBtn.backgroundColor = UIColor.clearColor()
         StartAdventureBtn.layer.borderWidth = 8.0
         StartAdventureBtn.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).CGColor

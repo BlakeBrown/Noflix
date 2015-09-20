@@ -89,7 +89,6 @@ class BusinessesViewController: UIViewController, CLLocationManagerDelegate {
         let locValue : CLLocationCoordinate2D = locationManager.location!.coordinate;
         long = locValue.longitude;
         lat = locValue.latitude;
-        
     }
     
     override func didReceiveMemoryWarning() {
