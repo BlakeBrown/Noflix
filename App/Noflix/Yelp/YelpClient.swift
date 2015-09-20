@@ -34,7 +34,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         return Static.instance!
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -56,7 +56,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         // For additional parameters, see http://www.yelp.com/developers/documentation/v2/search_api
 
         // Default the location to San Francisco
-        var parameters: [String : AnyObject] = ["term": term, "ll": "43.4667, -80.5167"]
+        var parameters: [String : AnyObject] = ["term": term, "ll": "43.469227, -80.540352"]
 
         if sort != nil {
             parameters["sort"] = sort!.rawValue
@@ -64,7 +64,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         
         if categories != nil && categories!.count > 0 {
 //            parameters["category_filter"] = (categories!).joinWithSeparator(",")
-            parameters["category_filter"] = ",".join(categories!)
+            parameters["category_filter"] = categories!.joinWithSeparator(",")
         }
         
         if deals != nil {

@@ -55,7 +55,7 @@ class Business: NSObject {
                 categoryNames.append(categoryName)
             }
 //            categories = categoryNames.joinWithSeparator(", ")
-            categories = ", ".join(categoryNames)
+            categories = categoryNames.joinWithSeparator(", ")
         } else {
             categories = nil
         }
@@ -79,7 +79,7 @@ class Business: NSObject {
         reviewCount = dictionary["review_count"] as? NSNumber
     }
     
-    class func businesses(#array: [NSDictionary]) -> [Business] {
+    class func businesses(array array: [NSDictionary]) -> [Business] {
         var businesses = [Business]()
         for dictionary in array {
             let business = Business(dictionary: dictionary)

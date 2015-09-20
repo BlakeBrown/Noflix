@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import CoreLocation
 
-class BusinessesViewController: UIViewController {
+class BusinessesViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var maleBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    var locationManager = CLLocationManager()
+    var lat: Double!
+    var long: Double!
+    var curLocation: CLLocation!
     
     var colourIndex = -1;
     var colourArray: [UIColor!] = [UIColor(red: 234.0/255, green: 253.0/255, blue: 230.0/255, alpha: 1.0),
@@ -30,18 +36,17 @@ class BusinessesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["italian"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-//            self.businesses = businesses
-//            
-//            if (businesses != nil){
-//                for business in businesses {
-//                    print(business.name!)
-//                    print(" | ")
-//                    print(business.address!)
-//                    print(" \n")
-//                }
-//            }
-//        }
+        super.viewDidLoad()
+        locationManager.requestWhenInUseAuthorization();
+        if CLLocationManager.locationServicesEnabled(){
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+            
+        }
+        else{
+            print("Location service disabled");
+        }
         
         let borderAlpha : CGFloat = 0.8
         let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.height*0.25*0.5
@@ -76,19 +81,33 @@ class BusinessesViewController: UIViewController {
         }
     }
 
+    @IBAction func beginBtn(sender: UIButton) {
+
+        
+    }
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        let locValue : CLLocationCoordinate2D = locationManager.location!.coordinate;
+        long = locValue.longitude;
+        lat = locValue.latitude;
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        var nextVC : LocationViewController = segue.destinationViewController as! LocationViewController
+        nextVC.lat = self.lat
+        nextVC.long = self.long
+        
     }
-    */
+
 
 }

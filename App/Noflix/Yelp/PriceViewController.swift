@@ -19,10 +19,11 @@ class PriceViewController: UIViewController {
     @IBOutlet weak var onehundredDollars: UIButton!
     @IBOutlet weak var onehundredfiftyDollars: UIButton!
     
+    var lat: Double!
+    var long: Double!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(locationRadius);
 
         let borderAlpha : CGFloat = 0.8
         //        let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.width*0.25*0.5
@@ -65,7 +66,12 @@ class PriceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func unwindToVCPrice(segue: UIStoryboardSegue) {
+        if(segue.sourceViewController .isKindOfClass(PriceViewController))
+        {
+            print("back to price");
+        }
+    }
     
     // MARK: - Navigation
 
@@ -75,33 +81,45 @@ class PriceViewController: UIViewController {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 20
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
         }
         if (segue.identifier == "35") {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 35
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
         }
         if (segue.identifier == "50") {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 50
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
             
         }
         if (segue.identifier == "75") {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 75
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
         }
         if (segue.identifier == "100") {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 100
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
             
         }
         if (segue.identifier == "150") {
             var venue : VenueViewController = segue.destinationViewController as! VenueViewController
             venue.price = 150
             venue.locationRadius = self.locationRadius
+            venue.lat = lat;
+            venue.long = long;
         }
     }
 

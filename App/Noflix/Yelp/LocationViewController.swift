@@ -15,7 +15,9 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var twentyfivekm: UIButton!
     @IBOutlet weak var thirtyfivekm: UIButton!
     @IBOutlet weak var fiftykm: UIButton!
-
+    
+    var lat: Double!
+    var long: Double!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,28 +72,40 @@ class LocationViewController: UIViewController {
         if (segue.identifier == "5") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 5
+            price.lat = lat;
+            price.long = long;
         }
         if (segue.identifier == "10") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 10
+            price.lat = lat;
+            price.long = long;
         }
         if (segue.identifier == "15") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 15
+            price.lat = lat;
+            price.long = long;
             
         }
         if (segue.identifier == "25") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 25
+            price.lat = lat;
+            price.long = long;
         }
         if (segue.identifier == "35") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 35
+            price.lat = lat;
+            price.long = long;
             
         }
         if (segue.identifier == "50") {
             var price : PriceViewController = segue.destinationViewController as! PriceViewController
             price.locationRadius = 50
+            price.lat = lat;
+            price.long = long;
         }
     }
     

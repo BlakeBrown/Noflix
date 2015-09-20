@@ -18,10 +18,12 @@ class VenueViewController: UIViewController {
     
     var price: Int!
     var locationRadius: Int!
+    var lat: Double!
+    var long: Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let borderAlpha : CGFloat = 0.8
         //        let cornerRadius : CGFloat = UIScreen.mainScreen().bounds.width*0.25*0.5
         let cornerRadius : CGFloat = 65
@@ -58,6 +60,13 @@ class VenueViewController: UIViewController {
     }
     
 
+    @IBAction func unwindToVCVenue(segue: UIStoryboardSegue) {
+        if(segue.sourceViewController .isKindOfClass(VenueViewController))
+        {
+            print("back to venue");
+        }
+    }
+    
     
     // MARK: - Navigation
 
@@ -67,18 +76,24 @@ class VenueViewController: UIViewController {
             final.price = self.price
             final.locationRadius = self.locationRadius
             final.venue = "restaurant"
+            final.lat = lat
+            final.long = long
         }
         if (segue.identifier == "movies") {
             var final : FinalViewController = segue.destinationViewController as! FinalViewController
             final.price = self.price
             final.locationRadius = self.locationRadius
             final.venue = "movie"
+            final.lat = lat
+            final.long = long
         }
         if (segue.identifier == "active") {
             var final : FinalViewController = segue.destinationViewController as! FinalViewController
             final.price = self.price
             final.locationRadius = self.locationRadius
             final.venue = "active"
+            final.lat = lat
+            final.long = long
             
         }
         if (segue.identifier == "exhibits") {
@@ -86,12 +101,16 @@ class VenueViewController: UIViewController {
             final.price = self.price
             final.locationRadius = self.locationRadius
             final.venue = "exhibit"
+            final.lat = lat
+            final.long = long
         }
         if (segue.identifier == "shows") {
             var final : FinalViewController = segue.destinationViewController as! FinalViewController
             final.price = self.price
             final.locationRadius = self.locationRadius
             final.venue = "show"
+            final.lat = lat
+            final.long = long
             
         }
     }
