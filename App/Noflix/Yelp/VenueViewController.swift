@@ -20,6 +20,7 @@ class VenueViewController: UIViewController {
     var locationRadius: Int!
     var lat: Double!
     var long: Double!
+    var loc = [Double]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +69,14 @@ class VenueViewController: UIViewController {
     }
     
     
+    @IBAction func shows(sender: UIButton) {
+        let api = EventbriteAPI()
+        api.eventbriteLocation("\(locationRadius)km", userLongitude: "\(long)", userLatitude: "\(lat)", userPrice: price) { loc in
+            self.loc = loc
+        }
+
+    }
+    
     // MARK: - Navigation
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -111,6 +120,7 @@ class VenueViewController: UIViewController {
             final.venue = "show"
             final.lat = lat
             final.long = long
+            final.showsLoc = loc
             
         }
     }

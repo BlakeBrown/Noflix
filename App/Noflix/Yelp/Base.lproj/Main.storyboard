@@ -774,6 +774,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="shows:" destination="bx3-uE-0hE" eventType="touchUpInside" id="aZj-6y-jqJ"/>
                                     <segue destination="kZl-jR-3IZ" kind="show" identifier="shows" id="vRW-Ud-6oe"/>
                                 </connections>
                             </button>

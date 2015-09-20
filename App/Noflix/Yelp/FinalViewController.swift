@@ -15,6 +15,7 @@ import SwiftyJSON
 
 class FinalViewController: UIViewController {
     
+    var showsLoc = [Double]()
     var price: Int!
     var locationRadius: Int!
     var venue: String!
@@ -104,11 +105,17 @@ class FinalViewController: UIViewController {
                                 
 //                                self.spendPrice.text = self.topResult.distance
  
-                                self.spendPrice.text = "$\(Int(String(actualPrice))!/4)"
+                                if let realPrice = Int(String(actualPrice)) {
+                                    self.spendPrice.text = "$\(Int(String(realPrice))!/4)"
+                                } else {
+                                    self.spendPrice.text = "$15"
+                                }
                         }
                         
                     }
-                    })
+                    
+                    
+                })
                     
          
                 
@@ -117,47 +124,6 @@ class FinalViewController: UIViewController {
                 //DISTANCE//////////////
                 
                 self.travelDistance.text = self.topResult.distance
-                
-                
-                
-                
-                
-                
-//                self.geocoder.geocodeAddressString("\(self.topResult.address!), ON, Canada", completionHandler: {(placemarks, error) -> Void in
-//                    if((error) != nil){
-//                        print("Error", error)
-//                        print(placemarks)
-//                    }
-//                    if let placemark = placemarks?.first {
-//                        print("3")
-//                        let coordinates:CLLocationCoordinate2D = placemark.location!.coordinate
-//                        self.dest_lat = coordinates.latitude
-//                        self.dest_long = coordinates.longitude
-//                        print(self.dest_lat)
-//                        print(self.dest_long)
-//                        
-//                        self.beginLoc = CLLocation(latitude: self.lat , longitude: self.long)
-//                        self.endLoc = CLLocation(latitude: self.dest_lat , longitude: self.dest_long)
-////                        print("distance: \(self.getDistance(self.beginLoc, destination: self.endLoc))")
-//                        print("distance: \(self.calculateDistance(self.lat, long:self.long, dest_lat: self.dest_lat, dest_long: self.dest_long))")
-//
-//                        while (self.calculateDistance(self.lat, long:self.long, dest_lat: self.dest_lat, dest_long: self.dest_long) > 100){
-////                        while (self.getDistance(self.beginLoc, destination: self.endLoc)/1609.34 > 100){
-////                            print("distance: \(self.getDistance(self.beginLoc, destination: self.endLoc))")
-//                            self.topResult = self.sortedBusinesses[self.counter+1]
-//                            self.counter++;
-//                        }
-//                        
-//                        let serverToken = "SnH3D6QyHROSvkeontJX6D8WWHXmexwC3AZwzOCB"
-//                        
-//                        Alamofire.request(.GET, "https://api.uber.com/v1/estimates/price", parameters: ["server_token": serverToken, "start_latitude": self.lat, "start_longitude": self.long, "end_latitude": self.dest_lat, "end_longitude": self.dest_long])
-//                            .response {request, response, data, error in
-//                                let json = JSON(data: data!);
-//                                print (json);
-//                        }
-//                        
-//                    }
-//                })
 
             }
         }

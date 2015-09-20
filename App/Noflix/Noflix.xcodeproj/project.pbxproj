@@ -16,6 +16,8 @@
 		22AAAA991AEA0A9700A544AF /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA981AEA0A9700A544AF /* Business.swift */; };
 		22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */; };
 		252BD11A1BADFCF900872A2C /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252BD1191BADFCF900872A2C /* FinalViewController.swift */; };
+		2654EB761BAEED530006D9C3 /* EventbriteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654EB751BAEED530006D9C3 /* EventbriteAPI.swift */; };
+		2654EB781BAEF0110006D9C3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2654EB771BAEF0110006D9C3 /* SwiftyJSON.swift */; };
 		267CA1FB1BAD62C10035BD07 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 267CA1F81BAD62AC0035BD07 /* Comfortaa-Bold.ttf */; };
 		267CA1FC1BAD62C50035BD07 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 267CA1F91BAD62AC0035BD07 /* Comfortaa-Light.ttf */; };
 		267CA1FD1BAD62C60035BD07 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 267CA1FA1BAD62AC0035BD07 /* Comfortaa-Regular.ttf */; };
@@ -52,6 +54,8 @@
 		22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
 		252BD1191BADFCF900872A2C /* FinalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		261012451BAE623000ED0918 /* Yelp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Yelp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2654EB751BAEED530006D9C3 /* EventbriteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventbriteAPI.swift; sourceTree = "<group>"; };
+		2654EB771BAEF0110006D9C3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		267CA1F81BAD62AC0035BD07 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		267CA1F91BAD62AC0035BD07 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		267CA1FA1BAD62AC0035BD07 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				222D8A7C19CCFAE000D2DB53 /* YelpClient.swift */,
+				2654EB751BAEED530006D9C3 /* EventbriteAPI.swift */,
+				2654EB771BAEF0110006D9C3 /* SwiftyJSON.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -356,6 +362,8 @@
 				267CA2011BAD73490035BD07 /* LocationViewController.swift in Sources */,
 				267CA2051BADF9410035BD07 /* VenueViewController.swift in Sources */,
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
+				2654EB781BAEF0110006D9C3 /* SwiftyJSON.swift in Sources */,
+				2654EB761BAEED530006D9C3 /* EventbriteAPI.swift in Sources */,
 				267CA2031BADB8CB0035BD07 /* PriceViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
 				252BD11A1BADFCF900872A2C /* FinalViewController.swift in Sources */,
